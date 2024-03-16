@@ -1,16 +1,18 @@
 :root {
-    --background-color: #362f2f;
-    --text-color: #eeeeee;
+    --background-color: #eeeeee;
+    --text-color: #362f2f;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color: #eeeeee;
-        --text-color: #362f2f;
+        --background-color: #362f2f;
+        --text-color: #eeeeee;
     }
 }
 
 html {
     background-color: var(--background-color);
     color: var(--text-color);
+    text-align: center;
+    font-size: 7em;
 }

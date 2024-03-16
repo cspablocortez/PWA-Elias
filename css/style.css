@@ -14,5 +14,8 @@ html {
     background-color: var(--background-color);
     color: var(--text-color);
     text-align: center;
-    font-size: 7em;
+}
+
+h1 {
+    font-size: 5em;
 }

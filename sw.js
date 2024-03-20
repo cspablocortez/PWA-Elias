@@ -3,10 +3,13 @@ const CACHE_NAME = `clock-app-${VERSION}`
 
 const APP_STATIC_RESOURCES = [
     "/",
-    "/index.html",
-    "/css/style.css",
-    "scripts/clock.js",
+    "index.html",
+    "css/style.css",
+    "script/clock.js",
     "icons/android-chrome-512x512.png",
+    "icons/apple-touch-icon.png",
+    "icons/favicon.ico",
+    "manifest.json"
 ]
 
 self.addEventListener("install", (e) => {
@@ -37,7 +40,7 @@ self.addEventListener("fetch", (event) => {
   // when seeking an HTML page
   if (event.request.mode === "navigate") {
     // Return to the index.html page
-    event.respondWith(caches.match("/"));
+    event.respondWith(caches.match("index.html"));
     return;
   }
 
